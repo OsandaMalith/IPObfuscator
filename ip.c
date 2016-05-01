@@ -45,7 +45,6 @@ int isValidIp(char *str) {
 int main(){
 	banner();
 	int i;
-	unsigned int final;
 	char ip[100], *token;
 	unsigned int dec[3];
 	const char deli[2] = ".";

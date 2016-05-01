@@ -114,8 +114,7 @@ int main(){
 		printf("%u\n", (*(dec+1) << 16)|(*(dec+2) << 8)|*(dec+3));
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 2 ? i == 3 ? "%04o" : "%04o." : "0x%02X.",dec[i]);
-	puts("");
+		printf( i >= 2 ? i == 3 ? "%04o\n" : "%04o." : "0x%02X.",dec[i]);
 	printf("%s", http);
 	for(i=0;i<4;i++)
 		printf( i >= 1 ? i == 3 ? "%04o\n" : "%04o." : "0x%02X.",dec[i]);

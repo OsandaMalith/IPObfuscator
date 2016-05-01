@@ -1,5 +1,5 @@
 # IPObfuscator
-A simple tool to convert the IP to a DWORD IP 
+A simple tool to convert the IP to different obfuscated forms 
 
 <img src="http://i.imgur.com/7j6QcTV.png">
 

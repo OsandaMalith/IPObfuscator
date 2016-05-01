@@ -87,11 +87,11 @@ int main(){
 	puts("");
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 2 ? (i == 3 ? "%i" : "%i.") : "0x%02X.",dec[i]);
+		printf( i >= 2 ? i == 3 ? "%i" : "%i." : "0x%02X.",dec[i]);
 	puts("");
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 1 ? (i == 3 ? "%i" : "%i.") : "0x%02X.",dec[i]);
+		printf( i >= 1 ? i == 3 ? "%i" : "%i." : "0x%02X.",dec[i]);
 	puts("");
 	puts("");
 	printf("%s", http);
@@ -99,11 +99,11 @@ int main(){
 	puts("");
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 2 ? (i == 3 ? "%i" : "%i.") : "%04o.",dec[i]);
+		printf( i >= 2 ? i == 3 ? "%i" : "%i." : "%04o.",dec[i]);
 	puts("");
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 1 ? (i == 3 ? "%i" : "%i.") : "%04o.",dec[i]);
+		printf( i >= 1 ? i == 3 ? "%i" : "%i." : "%04o.",dec[i]);
 	puts("");
 	puts("");
 	printf("%s", http);
@@ -133,11 +133,11 @@ int main(){
 	puts("");
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 2 ? (i == 3 ? "%04o" : "%04o.") : "0x%02X.",dec[i]);
+		printf( i >= 2 ? i == 3 ? "%04o" : "%04o." : "0x%02X.",dec[i]);
 	puts("");
 	printf("%s", http);
 	for(i=0;i<4;i++)
-		printf( i >= 1 ? (i == 3 ? "%04o" : "%04o.") : "0x%02X.",dec[i]);
+		printf( i >= 1 ? i == 3 ? "%04o" : "%04o." : "0x%02X.",dec[i]);
 	puts("");
 	printf("%s", http);
 	for(i=0;i<2;i++)

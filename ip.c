@@ -143,4 +143,9 @@ int main(){
 	for(i=0;i<2;i++)
 		printf( i >= 1 ? "%04o." : "0x%02X.",dec[i]);
 		printf("%u",(dec[2]<<8)|dec[3]);
+
+#ifndef __unix__ 
+	system("pause > nul");
+#endif
+	return 0;
 }

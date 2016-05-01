@@ -47,7 +47,7 @@ int main(){
 	int i;
 	unsigned int final;
 	char ip[100], *token;
-	unsigned char dec[3];
+	unsigned int dec[3];
 	const char deli[2] = ".";
 
 	printf("\n[+] Enter your IP: ");

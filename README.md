@@ -3,7 +3,7 @@ A simple tool to convert the IP to different obfuscated forms
 
 Example:
 IP address of http://google.lk : http://222.165.163.91<br>
-Other forms you can write the same IP:<br>
+Other forms you can write the same IP:<br><br>
 [+] http://3735397211<br>
 <br>
 [+] http://0xDE.0xA5.0xA3.0x5B<br>

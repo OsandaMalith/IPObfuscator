@@ -58,7 +58,7 @@ int main(){
 	strtok(ip, "\n");
 	
 	if(!isValidIp(ip)) {
-		fprintf(stderr,"%s","[!] Enter a valid ip");
+		fprintf(stderr,"%s","[!] Enter a valid ip\n");
 		exit(-1);
 	}
 	token = strtok(ip, deli);

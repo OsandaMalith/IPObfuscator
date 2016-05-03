@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+
 /*
  * License:
  * This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. 
@@ -122,7 +124,7 @@ int main(){
 	printf("%s", http);
 	for(i=0;i<2;i++)
 		printf( i >= 1 ? "%04o." : "0x%02X.",dec[i]);
-		printf("%u",(*(dec+2) << 8)|*(dec+3));
+		printf("%u\n",(*(dec+2) << 8)|*(dec+3));
 
 #ifndef __unix__ 
 	system("pause > nul");

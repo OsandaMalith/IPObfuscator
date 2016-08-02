@@ -49,7 +49,7 @@ int main(){
 	banner();
 	size_t i;
 	char ip[100], *token;
-	unsigned int dec[3];
+	unsigned int dword, dec[3];
 	const char deli[2] = ".";
 	const char *http = "[+] http://";
 
@@ -70,7 +70,13 @@ int main(){
 	
 
 	puts("\n[~] Obfuscated IPs :\n");
-	printf("[+] http://%u\n\n",(*dec << 24)|(*(dec+1) << 16)|(*(dec+2) << 8)|*(dec+3));
+	printf("%s", http);
+	printf("%u\n",dword=(*dec << 24)|(*(dec+1) << 16)|(*(dec+2) << 8)|*(dec+3));
+	printf("%s", http);
+	printf("0x%X\n",dword);
+	printf("%s", http);
+	printf("0%o\n\n",dword);
+	
 	printf("%s", http);
 	for(i=0;i<4;i++) printf( i == 3 ? "0x%02X\n" : "0x%02X.",dec[i]);
 	printf("%s", http);
@@ -121,7 +127,6 @@ int main(){
 	printf("%s", http);
 	for(i=0;i<4;i++)
 		printf( i >= 1 ? i == 3 ? "%04o\n" : "%04o." : "0x%02X.",dec[i]);
-
 #ifndef __unix__ 
 	system("pause > nul");
 #endif

@@ -121,10 +121,6 @@ int main(){
 	printf("%s", http);
 	for(i=0;i<4;i++)
 		printf( i >= 1 ? i == 3 ? "%04o\n" : "%04o." : "0x%02X.",dec[i]);
-	printf("%s", http);
-	for(i=0;i<2;i++)
-		printf( i >= 1 ? "%04o." : "0x%02X.",dec[i]);
-		printf("%u\n",(*(dec+2) << 8)|*(dec+3));
 
 #ifndef __unix__ 
 	system("pause > nul");
